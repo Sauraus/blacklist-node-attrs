@@ -21,23 +21,6 @@ class Blacklist
   # blacklisted map of the keys you want excluded. Note we are only using the
   # keys in this hash - if the values are anything other than another hash, we
   # ignore them.
-  #
-  # Blacklist.filter(
-  # { "filesystem" => {
-  #    "/dev/disk0s2" => {
-  #     "size" => "10mb"
-  #    },
-  #    "map - autohome' => {
-  #     "size" => "10mb"
-  #    }
-  # },
-  # {
-  #   "filesystem" => {
-  #     "/dev/disk0s2" => true
-  #   }
-  # })
-  #
-  # Will drop the entire "map - autohome" tree.
   def self.filter(data, blacklist)
     if data == nil
       return nil
