@@ -4,6 +4,11 @@ Allows you to provide a blacklist of node attributes to not save on the server. 
 of the attributes are still available throughout the chef run, but those specifically
 listed will not be saved to the server.
 
+NOTE
+==============
+This cookbook is a carbon copy of the https://github.com/Sauraus/whitelist-node-attrs
+cookbook, except it works in reverse.
+
 ATTRIBUTES
 ==============
 node[:blacklist] provides a map of node attributes not to store. The defaults are provided
